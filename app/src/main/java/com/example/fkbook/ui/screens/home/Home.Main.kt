@@ -13,6 +13,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import com.example.fkbook.common.constants.AVATAR
+import com.example.fkbook.ui.screens.home.components.feed.Feed
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import me.onebone.toolbar.CollapsingToolbarScaffold
 import me.onebone.toolbar.ScrollStrategy
@@ -87,6 +88,7 @@ fun HomeScreen() {
         ) {
             FeedCreator()
             Reel()
+            Feed()
         }
     }
 }
