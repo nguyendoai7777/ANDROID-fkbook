@@ -20,3 +20,8 @@ val Purple700 = Color(0xFF7B1FA2)
 val Black = Color(0xFF000000)
 val White = Color(0xFFFFFFFF)
 
+val BluePrimary = Color(0xFF2e89ff)
+val OnLivestream = Color(0xFFf0284a)
+val OnActive = Color(0xFF31a14c)
+val BorderedOnActive = Color(0xFF242626)
+

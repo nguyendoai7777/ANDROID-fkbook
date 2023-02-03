@@ -52,23 +52,18 @@ fun ActionButton(icon: ImageVector, modifier: Modifier = Modifier, onClick: () -
 
 
 @Composable
-fun HomeTopAppbar(scrollState: LazyListState) {
-    var scrollYPos = 0
-    var prevOffset = 0
+fun HomeTopAppbar(modifier: Modifier = Modifier) {
     Row(
-        modifier = Modifier
+        modifier = modifier
             .fillMaxWidth()
-            .padding(vertical = 12.dp)
-            /*.graphicsLayer {
-                scrollYPos += scrollState.firstVisibleItemScrollOffset - prevOffset
-                translationY = -(scrollYPos * 0.5f)
-                prevOffset = 0
-            }*/,
+            .padding(vertical = 12.dp),
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.SpaceBetween,
     ) {
         LogoFake()
-        Row() {
+        Row(
+            modifier.padding(end = 6.dp)
+        ) {
             ActionButton(Icons.Filled.Add)
             ActionButton(Icons.Filled.Search)
             ActionButton(Icons.Filled.Email)
