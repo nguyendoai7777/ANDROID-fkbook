@@ -3,17 +3,13 @@ package com.example.fkbook
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Scaffold
-import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -21,7 +17,7 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.fkbook.common.constants.AppRoutes
 import com.example.fkbook.ui.components.BottomNav
-import com.example.fkbook.ui.screens.HomeScreen
+import com.example.fkbook.ui.screens.home.HomeScreen
 import com.example.fkbook.ui.theme.FkbookTheme
 
 class MainActivity : ComponentActivity() {
