@@ -93,7 +93,7 @@ fun ReelCard(feed: FeedItemData, modifier: Modifier = Modifier) {
 fun Reel() {
     LazyRow(
         modifier = Modifier
-            .padding(vertical = 12.dp)
+            .padding(top = 12.dp)
             .background(color = Color.White)
     ) {
         FeedList.forEachIndexed { index, feed ->

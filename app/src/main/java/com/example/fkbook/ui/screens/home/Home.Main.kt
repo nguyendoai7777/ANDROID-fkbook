@@ -89,6 +89,10 @@ fun HomeScreen() {
             FeedCreator()
             Reel()
             Feed()
+            Feed()
+            Feed()
+            Feed()
+            Feed()
         }
     }
 }
