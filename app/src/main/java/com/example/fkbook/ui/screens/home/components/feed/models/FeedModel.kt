@@ -38,3 +38,17 @@ data class FeedCreator(
     override val reactionPostsContent: ReactionPostsContent,
     override val onLiveStreamContent: OnLiveStreamContent,
 ) : FeedProps
+
+
+class RelateActionModel {
+    val subjectFirstName: String = ""
+    val subjectLastName: String = ""
+    val action: String = ""
+}
+
+data class FeedDataMock(
+    val subjectFirstName: String,
+    val subjectLastName: String,
+    val action: String
+)
+

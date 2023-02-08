@@ -1,4 +1,4 @@
-package com.example.fkbook.ui.screens.home
+package com.example.fkbook.ui.screens.home.components
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
@@ -20,6 +20,10 @@ import coil.compose.AsyncImage
 import com.example.fkbook.common.constants.CircleShape
 import com.example.fkbook.ui.components.ActiveDetector
 import com.example.fkbook.ui.components.LiveBanner
+import com.example.fkbook.ui.screens.home.ActiveMode
+import com.example.fkbook.ui.screens.home.FeedItemData
+import com.example.fkbook.ui.screens.home.FeedList
+import com.example.fkbook.ui.screens.home.OnlineMode
 import com.example.fkbook.ui.theme.BluePrimary
 import com.example.fkbook.ui.theme.OnLivestream
 

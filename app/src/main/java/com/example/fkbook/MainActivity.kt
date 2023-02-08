@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
@@ -38,6 +39,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+@OptIn(ExperimentalMaterialApi::class)
 @Composable
 fun AppMain(
     navController: NavHostController = rememberNavController()
@@ -72,7 +74,7 @@ fun AppMain(
     ) { innerPadding ->
         NavHost(
             navController = navController,
-            startDestination = AppRoutes.Video.name,
+            startDestination = AppRoutes.Home.name,
             modifier = Modifier.padding(innerPadding)
         ) {
             composable(AppRoutes.Home.name) {

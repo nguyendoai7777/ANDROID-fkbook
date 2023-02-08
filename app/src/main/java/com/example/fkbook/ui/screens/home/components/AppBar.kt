@@ -25,7 +25,7 @@ import com.example.fkbook.ui.theme.Pink600
 @Composable
 fun LogoFake() {
     Text(
-        "facebook",
+        "fakebook",
         modifier = Modifier.padding(start = 12.dp),
         color = Pink600,
         fontSize = 26.sp,
@@ -48,8 +48,11 @@ fun HomeTopAppbar(modifier: Modifier = Modifier) {
             modifier.padding(end = 6.dp)
         ) {
             ActionButton(Icons.Filled.Add)
+            Spacer(modifier = Modifier.width(6.dp))
             ActionButton(Icons.Filled.Search)
+            Spacer(modifier = Modifier.width(6.dp))
             ActionButton(Icons.Filled.Email)
+            Spacer(modifier = Modifier.width(6.dp))
         }
     }
 }

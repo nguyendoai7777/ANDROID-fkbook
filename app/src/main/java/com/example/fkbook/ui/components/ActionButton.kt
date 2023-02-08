@@ -21,7 +21,7 @@ fun ActionButton(
     onClick: () -> Unit = {}
 ) {
     Surface(
-        modifier = modifier.padding(horizontal = 6.dp),
+        modifier = modifier,
         shape = RoundedCornerShape(50),
         color = if (transparentBackground) Color.Transparent else Color(0xFFDADADA)
     ) {

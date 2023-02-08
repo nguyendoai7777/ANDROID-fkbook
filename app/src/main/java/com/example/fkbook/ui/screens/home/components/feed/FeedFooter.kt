@@ -19,7 +19,7 @@ import com.example.fkbook.ui.components.LoveCIcon
 val gFontSize = 13.sp
 
 @Composable
-fun FeedFooter(hasComments: Boolean) {
+fun FeedFooter(hasComments: Boolean, openCommentSheet: () -> Unit = {}) {
     val configuration = LocalConfiguration.current.screenWidthDp.dp
     /*Reaction info */
     Row(
@@ -70,6 +70,7 @@ fun FeedFooter(hasComments: Boolean) {
             icon = painterResource(id = R.drawable.comment_outline_24),
             text = "Bình luận",
             contentDesc = "comment",
+            onClick = openCommentSheet
         )
         FooterButton(
             modifier = Modifier
